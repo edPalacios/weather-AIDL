@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.walkernation.aidlservice.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#ffb9c3ff"
+
+   >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:textStyle="bold"
+           android:textSize="30sp"
+           android:gravity="center"
+           android:textColor="@android:color/white"
+           android:backgroundTint="@android:color/holo_blue_dark"
+           android:text="City Weather Service"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="15dp">
+        <Button
+            android:id="@+id/button1"
+            android:background="@drawable/button_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="expandWeatherSync"
+            android:text="Sync"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="expandWeatherAsync"
+            android:textColor="@android:color/white"
+
+            android:background="@drawable/button_shape"
+            android:text=" Async" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/holo_blue_dark">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:hint="Enter a city (country code needed)"
+        android:textColorHighlight="#ffb6fff3"/>
+
+    </LinearLayout>
+
+<!--
+    <include
+        android:id="@+id/labels"
+        layout="@layout/weather_data_row" />
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:orientation="vertical">
+    <ListView
+
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openMap"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_shape"
+            android:text=" View weather in map"
+            android:padding="3dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>
