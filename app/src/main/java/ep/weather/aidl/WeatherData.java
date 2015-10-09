@@ -6,8 +6,6 @@ import android.os.Parcelable;
 import java.io.Serializable;
 
 /**
- * API KEY
- * 60d3088d19722dc7861d8426f0ffb09e
  *
  * This class is a Plain Old Java Object (POJO) used for data
  * transport within the WeatherService app.  This POJO implements the
@@ -16,26 +14,6 @@ import java.io.Serializable;
  * response Json obtained from the Open Weather Map API, e.g., a call
  * to http://api.openweathermap.org/data/2.5/weather?q=Nashville,TN
  * might return the following Json data:
- *
- * { "coord":{ "lon":-86.78, "lat":36.17 }, "sys":{ "message":0.0138,
- * "country":"United States of America", "sunrise":1431427373,
- * "sunset":1431477841 }, "weather":[ { "id":802, "main":"Clouds",
- * "description":"scattered clouds", "icon":"03d" } ],
- * "base":"stations", "main":{ "temp":289.847, "temp_min":289.847,
- * "temp_max":289.847, "pressure":1010.71, "sea_level":1035.76,
- * "grnd_level":1010.71, "humidity":76 }, "wind":{ "speed":2.42,
- * "deg":310.002 }, "clouds":{ "all":36 }, "dt":1431435983,
- * "id":4644585, "name":"Nashville", "cod":200 }
- *
- * The meaning of these Json fields is documented at
- * http://openweathermap.org/weather-data#current.
- *
- * Parcelable defines an interface for marshaling/de-marshaling
- * https://en.wikipedia.org/wiki/Marshalling_(computer_science)
- * to/from a format that Android uses to allow data transport between
- * processes on a device.  Discussion of the details of Parcelable is
- * outside the scope of this assignment, but you can read more at
- * https://developer.android.com/reference/android/os/Parcelable.html.
  */
 public class WeatherData implements Parcelable, Serializable {
     /*
