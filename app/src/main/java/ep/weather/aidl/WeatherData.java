@@ -6,8 +6,6 @@ import android.os.Parcelable;
 import java.io.Serializable;
 
 /**
- * API KEY
- * 60d3088d19722dc7861d8426f0ffb09e
  *
  * This class is a Plain Old Java Object (POJO) used for data
  * transport within the WeatherService app.  This POJO implements the
